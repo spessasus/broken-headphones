@@ -1,0 +1,42 @@
+html {
+    font-family: system-ui, "Open Sans", "Noto Sans", sans-serif;
+    background: linear-gradient(23deg, #111, #222);
+    height: 100%;
+    color: #ccc;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+h1{
+    margin-bottom: 0;
+}
+
+h4{
+    margin-top: 0;
+}
+
+label{
+    background: linear-gradient(128deg, #333, #444);
+    padding: 1rem;
+    font-size: large;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+label:hover{
+    text-shadow: white 0 0 3px;
+    transform: scale(1.1);
+}
+
+label:active{
+    transform: scale(0.8);
+}

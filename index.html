@@ -2,9 +2,27 @@
 <html lang='en'>
 <head>
     <meta charset='UTF-8'>
-    <title>Title</title>
+    <title>Broken headphones simulator</title>
+    <meta name='de'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='IE=7'>
+    <meta name='description' content='This website emulates the broken headphones effect.'>
+    <link rel='stylesheet' href='style.css'>
 </head>
 <body>
+    <h1>Broken headphones effect</h1>
+    <h4>Created by spessasus</h4>
 
+    <p style='text-align: justify'>This website simulates that strange reverb effect you get when you do not fully plug your headphones in ,
+        or they are partially broken.
+    It is achieved by mixing two channels into mono and inverting one. Quite interesting!</p>
+
+    <p>Headphones recommended for the full effect.</p>
+
+    <label for='file_input' id='file_label'>Upload your audio file
+    </label>
+    <input type='file' accept='audio/*' id='file_input' hidden='hidden'>
+    <audio id='audio_source' controls></audio>
+    <script src='main.js' type='module'></script>
 </body>
 </html>
